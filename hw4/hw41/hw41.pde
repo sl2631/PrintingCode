@@ -1,26 +1,36 @@
+LineObject myLineObject;
+
+
+float a;
+
 void setup(){
-  size (800, 600);
-  background (255);
+
+  size (800, 800);
+ 
   smooth();
    textAlign(CENTER, CENTER);
+
+    myLineObject = new LineObject();
+   
 }
 
 void draw(){
-  noFill();
- 
+
+     background (255);
+      line (200,0, 200,700); // for the H
+a =40; // for the H
+    myLineObject.update();
+    
+ // line (width/4, 0, width/4, height);
+  //   line (0, height/2, width, height/2);
+    
+    
+  
+
+
+
  
  
 }
   
-  // for H
-  // height = width x2
-  stroke (1);
-  strokeWeight (5);
-  line ( 0,0, 0,400); // line A
-  line ( 0,0, 400,0); // line B
-  line ( 0,200, 400, 200); // line C
-  line ( 0, 400, 400, 400); // line D
-
   
-  
-
